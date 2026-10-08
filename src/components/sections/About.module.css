@@ -1,0 +1,114 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.visual {
+  position: relative;
+  border-radius: 22px;
+  background: linear-gradient(140deg, var(--blue) 0%, var(--blue-dark) 100%);
+  padding: 44px;
+  color: #fff;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.watermark {
+  position: absolute;
+  right: -60px;
+  top: -50px;
+  width: 320px;
+  height: 320px;
+  opacity: 0.12;
+}
+
+.visual h3 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.visual p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.mv div {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.mv b {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.mv small {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.5;
+  display: block;
+}
+
+.copy p {
+  margin-bottom: 16px;
+}
+
+.copy .title {
+  margin: 12px 0 20px;
+}
+
+.points {
+  list-style: none;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.points li {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.points li::before {
+  content: "✓";
+  color: var(--green);
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+  .visual {
+    padding: 30px;
+  }
+
+  .mv,
+  .points {
+    grid-template-columns: 1fr;
+  }
+}

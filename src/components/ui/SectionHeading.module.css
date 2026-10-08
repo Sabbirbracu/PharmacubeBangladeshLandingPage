@@ -1,0 +1,23 @@
+.head {
+  max-width: 680px;
+  margin-bottom: 52px;
+}
+
+.head p {
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark h2 {
+  color: #fff;
+}
+
+.dark p {
+  color: #9aa7b4;
+}
